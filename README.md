@@ -87,17 +87,18 @@ that schools do not provide nutritious lunches to students which may hinder thei
 
 ![](https://i.ibb.co/Pr4bbYL/0002.jpg)
 
-Percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in NYC school perceptions. NYC school perceptions 
+Percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in the NYC school perceptions.The NYC school perceptions display a more significant positive relationship with AP scores at the aggregate level. In particular, when students positively appraise their schools based on **safety and respect**, **engagement**, **communication** and **academic expectations**, then they are more likely to achieve a higher score on the AP examination. 
 
-As part of my last step in data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of school environemnt. By examining 
+In my last step of the data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of their school environment. By examining 
 ### Distribution of Teacher,Parent and Student Scores for Each Survey Question
 
 ![](https://i.ibb.co/b3ZWQdR/Response-type-Boxplot.png)
 ### Distribution of Total Scores for Each Survey Question
-
-Total scores roughly follow a normal distribution: the mean 
-
+ 
 ![](https://i.ibb.co/PgvcLHp/Total-Scores-Boxplot.png)
+
+The total distribution 
+
 ## Conclusion
 ## References
 [New York City Department of Education](https://data.cityofnewyork.us/Education/2011-NYC-School-Survey/mnz3-dyi8)
