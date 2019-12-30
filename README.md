@@ -78,7 +78,8 @@ A good way to visualize and present a relationship between two variables is by c
 
 An average SAT score in each NYC high school demonstrates either a strong or moderate correlation with 25 variables. Taking a quick glance, it appears that an average SAT score is likely to be higher when more students at a school write the SAT and AP exams. A relatively high number of SAT and AP takers could serve as a sign that a particular school provides an exceptional quality of education. Another interesting piece of observation to point is that the students, teachers and parents opinions on the **safety and respect** of their local school illustrate positive relationship with an average SAT score. In other words, if students feel safe and respected, then they are more likely to perform better on the SAT test. 
 
-Surprisingly, there is a negative correlation between the mean SAT score and the percentage of students who receive lunch at a price discount. Additionally, the ratio of hispanic and black students at a school exhibits a negative relationship with the *avg_sat_score* while the opposite appears to be true at schools which receive higher rates of white and Asian students. The discrepency in the average SAT score emphasizes the existence of racial inequality that persists in the US to this day. Schools with a higher percentage of student minorities tend to obtain less funding while minority families often find themselves at an economic disadvantage to  The same logic likely applies to.
+Surprisingly, there is a negative correlation between the mean SAT score and the percentage of students who receive lunch at a price discount. If the government subsidizes lunch to a large number of students at a specific school then that school might be located in a neighborhood succeptible to poverty. If that is not the case then an alternative explanation could be 
+that schools do not provide nutritious lunches to students which may hinder their academic performance. On another note, the ratio of hispanic and black students at a school exhibits a negative relationship with the *avg_sat_score* while the opposite appears to be true at schools which receive higher rates of white and Asian students. The discrepency in the average SAT score emphasizes the existence of racial inequality that persists in the US to this day. Schools with a higher percentage of black and hispanic student minorities tend to obtain less funding while families of those students often find themselves at an economic disadvantage to purchase additional educational resources to assist their children in exceling in academics.  
 
 ### Moderate/Strong Relationship Between *high_score_percent* and Other Variables
 
@@ -86,13 +87,15 @@ Surprisingly, there is a negative correlation between the mean SAT score and the
 
 ![](https://i.ibb.co/Pr4bbYL/0002.jpg)
 
+Percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in NYC school perceptions. NYC school perceptions 
 
-An AP score in each NYC high school displays either a strong or moderate correlation with 24 variables. The results are similar; however, there is a noteworthy difference regarding the 
-As part of my last step in data analysis, I would like 
+As part of my last step in data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of school environemnt. By examining 
 ### Distribution of Teacher,Parent and Student Scores for Each Survey Question
 
 ![](https://i.ibb.co/b3ZWQdR/Response-type-Boxplot.png)
 ### Distribution of Total Scores for Each Survey Question
+
+Total scores roughly follow a normal distribution: the mean 
 
 ![](https://i.ibb.co/PgvcLHp/Total-Scores-Boxplot.png)
 ## Conclusion
