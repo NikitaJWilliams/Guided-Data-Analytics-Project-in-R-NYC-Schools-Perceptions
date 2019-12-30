@@ -87,9 +87,23 @@ that schools do not provide nutritious lunches to students which may hinder thei
 
 ![](https://i.ibb.co/Pr4bbYL/0002.jpg)
 
-Percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in the NYC school perceptions.The NYC school perceptions display a more significant positive relationship with AP scores at the aggregate level. In particular, when students positively appraise their schools based on **safety and respect**, **engagement**, **communication** and **academic expectations**, then they are more likely to achieve a higher score on the AP examination. 
+The percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in the NYC school perceptions.The NYC school perceptions display a more significant positive relationship with AP scores at the aggregate level. In particular, when students positively appraise their schools based on **safety and respect**, **engagement**, **communication** and **academic expectations**, then they are more likely to achieve a higher score on the AP examination. 
 
 In my last step of the data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of their school environment. By examining 
+
+```
+#Reshape data frame to create box plot later on
+agg_response <- agg_NYC_school_data%>%gather(key = "survey_question", value = score, saf_p_11:aca_tot_11)
+
+#identify the type of person who responded to a survey question
+response_type <- if_else(str_sub(agg_response$survey_question,5,6) == "p_","parent",if_else(str_sub(agg_response$survey_question,5,6) == "t_","teacher",if_else(str_sub(agg_response$survey_question,5,6) == "s_","student",if_else(str_sub(agg_response$survey_question,5,6) == "to","total","NA"))))
+#identify the question type
+metric <- if_else(str_sub(agg_response$survey_question,1,3) == "saf","safety and respect",if_else(str_sub(agg_response$survey_question,1,3) == "aca","academic expectations",if_else(str_sub(agg_response$survey_question,1,3) == "eng","engagement",if_else(str_sub(agg_response$survey_question,1,3) == "com","communication","NA"))))
+
+#add two new variables to the agg_response data frame
+agg_response <- agg_response%>%mutate(response_type = response_type, metric = metric)%>%filter(response_type != "total"
+```
+
 ### Distribution of Teacher,Parent and Student Scores for Each Survey Question
 
 ![](https://i.ibb.co/b3ZWQdR/Response-type-Boxplot.png)
