@@ -89,13 +89,13 @@ that schools do not provide nutritious lunches to students which may hinder thei
 
 The percentage of high scoring AP exams in each NYC high school displays either a strong or moderate correlation with 24 variables. The results correspond to the correlation findings shown in the *avg_sat_score* scatter plots; however, there is a noteworthy dissimilarity in the NYC school perceptions.The NYC school perceptions display a more significant positive relationship with AP scores at the aggregate level. In particular, when students positively appraise their schools based on **safety and respect**, **engagement**, **communication** and **academic expectations**, then they are more likely to achieve a higher score on the AP examination. 
 
-In my last step of the data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of their school environment. The distribution of the survey scores will offer me a valuable insight as to how similar or divergent 
+In my last step of the data analysis, I would like to investigate the distribution of teacher, parent and student evaluations of their school environment. The distribution of the survey scores will offer me a valuable insight into how similar or dissimilar the opinions of the members of the community are to one another. To figure out whether parents, students and teachers share similar views on the four school characteristics, I will construct a boxplot; however, before I can create a proper boxplot, I will need to reshape my data first. My aggregate data frame does not currently contain two variables of interest: metric (safety and respect, engagemenet, communication and academic expectations) and response type (student, teacher, parent and total). To create the two new variables, I pick out the necessary information from *survey_question* variable (*saf_p_11, saf_s,11*,etc.) using the *str_sub()* function. I employ the *mutate()* function to join *metric* and *response_type* to my aggregate data frame.
 
 ### Distribution of Teacher,Parent and Student Scores for Each Survey Question
 
 ![](https://i.ibb.co/b3ZWQdR/Response-type-Boxplot.png)
 
-Text
+The boxplot demonstrates substantial differences in parent, teacher and student opinions on the quality of the NYC high schools. Parents typically assign high ratings to school metrics while students. The discrepency in the student and parent scores might come from the fact that students dislike school in general 
 ### Distribution of Total Scores for Each Survey Question
  
 ![](https://i.ibb.co/PgvcLHp/Total-Scores-Boxplot.png)
